@@ -2,17 +2,17 @@
 
 # Télécharger Plex Media Server
 echo "Téléchargement de Plex Media Server..."
-wget -q --show-progress https://downloads.plex.tv/plex-media-server-new/1.29.1.6549-03f59d64d/debian/plexmediaserver_1.29.1.6549-03f59d64d_amd64.deb
+wget -q --show-progress https://downloads.plex.tv/plex-media-server-new/1.30.0.6716-ccd5d0881/debian/plexmediaserver_1.30.0.6716-ccd5d0881_amd64.deb
 
 # Vérifier si le fichier a été téléchargé
-if [ ! -f plexmediaserver_1.29.1.6549-03f59d64d_amd64.deb ]; then
+if [ ! -f plexmediaserver_1.30.0.6716-ccd5d0881_amd64.deb ]; then
     echo "Erreur : Le fichier Plex Media Server n'a pas été téléchargé correctement."
     exit 1
 fi
 
 # Installer Plex Media Server
 echo "Installation de Plex Media Server..."
-sudo dpkg -i plexmediaserver_1.29.1.6549-03f59d64d_amd64.deb
+sudo dpkg -i plexmediaserver_1.30.0.6716-ccd5d0881_amd64.deb
 
 # Résoudre les dépendances manquantes
 echo "Installation des dépendances manquantes..."
